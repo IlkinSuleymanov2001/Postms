@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: request-ms
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: hasan
+    password: hasan123
+  jpa:
+    #    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        store_data_at_delete: true
+        default_schema: request_ms
+swagger-ui:
+  path: /swagger-ui.html
+  enabled: true
+server:
+  port: ${PORT:8082}
+
+jwt:
+  secret: 0044mysupersecretkey745supersecretkey1231mysupersecretkey1231mysupersecretkey
+
